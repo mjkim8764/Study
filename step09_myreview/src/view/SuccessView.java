@@ -4,7 +4,7 @@ import model.dto.Food;
 
 public class SuccessView {
 	
-	//1°³ÀÇ À½½ÄÀÇ Á¤º¸ Ãâ·Â
+	//1ê°œì˜ ìŒì‹ì˜ ì •ë³´ ì¶œë ¥
 	public static void printFood(Food food) {
 		System.out.println(food);
 	}
