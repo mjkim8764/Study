@@ -242,4 +242,7 @@ gradle-app.setting
 ### Gradle Patch ###
 **/build/
 
+### Tomcat Server Settings ### (Customize)
+*/Servers
+
 # End of https://www.toptal.com/developers/gitignore/api/maven,java,eclipse,gradle,intellij
