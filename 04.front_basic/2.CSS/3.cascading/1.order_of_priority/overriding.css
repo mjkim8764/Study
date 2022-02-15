@@ -1,0 +1,14 @@
+p {
+    font-size: 30px;
+    color : tomato;
+}
+
+p {
+    color: mediumpurple;
+}
+
+/* 외부랑 내부랑 순서 생각해보자 */
+/* css link랑 internal이랑 가까운 쪽 것이 적용된다 */
+.internal-vs-external {
+    background-color: mediumseagreen;
+}

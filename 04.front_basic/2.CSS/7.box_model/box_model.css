@@ -1,0 +1,16 @@
+* {
+    /* border-box */
+    /* padding, border, margin 다 합쳐서 width가 되도록 하는것 */
+    box-sizing: border-box;
+}
+
+.box {
+    width: 300px;
+    font-size: 50px;
+    background-color: skyblue;
+    padding: 20px;
+    border: 2px dashed red;
+    /* margin: 60px; */
+    /* margin: 20px 40px   상, 하 */
+    /* margin: 10px 20px 30px 40px; 시계 방향 */
+}

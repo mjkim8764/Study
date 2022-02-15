@@ -1,0 +1,49 @@
+* {
+    font-family: 'Homenaje', sans-serif;
+}
+
+span {
+    color: seagreen;
+}
+
+/* 자손 선택자 */
+
+.descendent-selector p {
+    font-size: 25px;
+    color: sienna;
+}
+
+/* 자식 선택자 */
+.child-selector > p {
+    font-size: 30px;
+    color: steelblue
+}
+
+.child-selector > .nested-div {
+    border: 2px dashed teal;
+}
+
+
+/* 모든 div의 아래위 인접한 형제(자매)들에게 적용 */
+div + p {
+    font-size: 30px;
+    color: turquoise;
+}
+
+
+.adjacent-sibling-selector + p {
+    font-size: 40;
+    color: darkgreen;
+
+}
+
+/* 일반 형제(자매) 선택자 */
+.general-sibling-selector ~ p {
+    font-size: 30px;
+    color: darkblue;
+}
+
+div ~ p {
+    font-size: 30px;
+    color: darkgoldenrod;
+}
