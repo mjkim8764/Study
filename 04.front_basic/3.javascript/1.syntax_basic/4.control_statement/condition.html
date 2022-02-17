@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript 조건문(Javascript Condition statement)</h1>
+    <hr>
+
+    <figure style="text-align: center;">
+        <img src="cookie.png" alt="">
+        <figcaption>책상에 쿠키가 2개 놓여있다.. 다 먹어도 될까?</figcaption>
+        <label for="menu">몇 개 먹을지 선택하자.</label>
+        <select name="" id="menu">
+            <option value="">== 선택지 ==</option>
+            <option value="one">하나밖에 없는 동생을 위해 한 개만 먹자.</option>
+            <option value="two">헉.. 실수로 다 먹어버렸다..(실수 맞아?)</option>
+            <option value="random">마법의 소라고동님, 쿠키를 다 먹어도 될까요?</option>
+        </select>
+
+        <hr>
+        결과: <p></p>
+    </figure>
+
+    <script>
+        const shoppingDone = false; // 쇼핑 여부
+        let childsAllowance; // 내 용돈
+
+        if(shoppingDone === true) {  // 쇼핑을 도와주면 용돈을 더 받을 수 있다.
+            childsAllowance = 10;
+        } else {
+            childsAllowance = 5;
+        }
+
+        console.log(`내 용돈은? ${childsAllowance} 딸라`); // backtick을 활용해서 내 용돈은? 00 딸라 출력해보기
+        console.log('dd');
+        const select = document.querySelector('select'); // select tag를 js코드로 가져옴.
+        // console.log(select);
+        const paragraph = document.querySelector('p');
+        console.log(paragraph);
+        console.dir(paragraph);
+
+
+
+        function setResult() {
+            // console.log('setResult()함수 호출');
+            // console.log(select.value);
+            // const choice = 5;
+
+            const choice = select.value;
+
+            if(choice === 'one') {
+                paragraph.textContent = '하늘에서 천사가 내려와 쿠키를 한 박스 주고 갔다.';
+            } else if(choice === 'two') {
+                paragraph.textContent = '이 과자쪼가리가 뭐라고.. 엄마한테 호되게 당했다.';
+            } else {
+                paragraph.textContent = '멈 춰 !!';
+            }
+        }
+
+        select.addEventListener('change', setResult);
+        // change 말고도 여러 이벤트가 있음.
+        // select 태그에게 사용자가 선택박스의 값을
+        // 수정하는 행동(이벤트)을 하는 것을 확인하면, setResult() 호출하도록 약속시킴.
+
+
+
+    </script>
+    
+</body>
+</html>
